@@ -6,36 +6,32 @@
 <title>Adeela Khan - AI Strategist & Digital Transformation Leader</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 body{margin:0;font-family:'Montserrat',sans-serif;background:#0a0a1a;color:#e0e0e0;overflow-x:hidden;}
 .font-teko{font-family:'Teko',sans-serif;}
-#bg-canvas,#lines-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
-#lines-canvas{pointer-events:none;z-index:0;}
-#agentic-core-container{width:100%;height:400px;cursor:grab;margin-bottom:2rem;}
-@media(min-width:768px){#agentic-core-container{height:500px;}}
 .section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;z-index:1;padding:80px 20px;}
 @media(min-width:768px){.section{padding:120px 40px;}}
-.glass-card{background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:20px;border:1px solid rgba(255,255,255,0.1);transition: all 0.3s ease;margin-bottom:1.5rem;}
+.glass-card{background:rgba(255,255,255,0.05);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:20px;border:1px solid rgba(255,255,255,0.1);transition:all 0.3s ease;margin-bottom:1.5rem;}
 .glass-card:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 20px 40px rgba(0,0,0,0.3);border-color:rgba(0,255,255,0.3);}
 .timeline-item{position:relative;padding-left:50px;padding-bottom:50px;border-left:2px solid rgba(255,255,255,0.2);opacity:0;transform:translateX(-20px);transition:opacity 0.6s ease-out, transform 0.6s ease-out;}
 .timeline-item:last-child{border-left:2px solid transparent;padding-bottom:0;}
 .timeline-item.visible{opacity:1;transform:translateX(0);}
-.timeline-item::before{content:'';position:absolute;left:-11px;top:5px;width:20px;height:20px;border-radius:50%;background-color:#8A2BE2;border:3px solid #0a0a1a;transition: all 0.3s ease;box-shadow:0 0 15px #8A2BE2;}
+.timeline-item::before{content:'';position:absolute;left:-11px;top:5px;width:20px;height:20px;border-radius:50%;background-color:#8A2BE2;border:3px solid #0a0a1a;transition:all 0.3s ease;box-shadow:0 0 15px #8A2BE2;}
 .timeline-item.visible::before{background-color:#FF00FF;box-shadow:0 0 25px #FF00FF;}
 .header{position:fixed;top:0;left:0;width:100%;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;z-index:100;background: rgba(10,10,26,0.5);backdrop-filter:blur(10px);}
 .nav-link{color:#e0e0e0;text-decoration:none;margin:0 15px;font-weight:600;transition:color 0.3s,text-shadow 0.3s;letter-spacing:1px;text-transform:uppercase;}
 .nav-link:hover{color:#00ffff;text-shadow:0 0 10px #00ffff;}
 .logo{font-size:1.8rem;font-weight:bold;font-family:'Teko',sans-serif;letter-spacing:2px;color:#fff;}
 .professional-font-bold{font-family:'Teko',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:1px;}
-iframe.form-embed{width:100%;min-height:600px;border:none;border-radius:15px;}
+#bg-canvas,#lines-canvas{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;}
+#lines-canvas{pointer-events:none;z-index:0;}
+#agentic-core-container{width:100%;height:400px;cursor:grab;margin-bottom:2rem;}
+@media(min-width:768px){#agentic-core-container{height:500px;}}
 @media(max-width:768px){.nav-link{margin:10px 0;}}
 </style>
 </head>
 <body>
-
 <canvas id="bg-canvas"></canvas>
 <canvas id="lines-canvas"></canvas>
 
@@ -72,13 +68,23 @@ iframe.form-embed{width:100%;min-height:600px;border:none;border-radius:15px;}
 <section id="my-story" class="section">
   <div class="max-w-4xl mx-auto">
     <h2 class="professional-font-bold text-4xl sm:text-5xl md:text-6xl text-center mb-12 text-white">Journey & Highlights</h2>
-    <p class="text-gray-200 text-center mb-6">Certified MIT Digital Transformation expert & Wharton-trained leader, with 20+ years of global IT leadership driving AI acceleration, digital enablement, and enterprise transformation.</p>
+    <p class="text-gray-200 text-center mb-6">Certified MIT Digital Transformation expert & Wharton-trained leader, with 20+ years of global IT leadership driving AI acceleration, digital enablement, and enterprise transformation. I’ve shaped business solutions & IP portfolios across Government, Healthcare, Energy, Finance, Space & Manufacturing, helping organizations unlock value by aligning AI-driven innovation with strategic priorities.As a trusted advisor to CxO leaders, I bring business case rigor & portfolio ROI discipline to executive decision-making, while scaling AI adoption, digital transformation, and innovation ecosystems. Skilled in SAFe Lean Portfolio & Product Management, Agile, and Scrum, I lead global portfolios that deliver growth, strengthen client partnerships, and drive measurable business impact.</p>
     <div class="glass-card p-6 sm:p-8">
       <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-center text-cyan-300 professional-font-bold">Key Highlights</h3>
       <ul class="text-gray-300 space-y-4 text-sm sm:text-base">
         <li><strong>CGI Inc. - Director Global Intelligent Solutions & Innovation (2020-Present)</strong><br>Drive innovation and sustainable growth across CGI's global business, co-developing enterprise-wide AI strategy.</li>
         <li><strong>CGI Inc. - Director Consulting Services (2015-2020)</strong><br>Consistently achieved 15-20% revenue growth and gross margin increases.</li>
       </ul>
+    </div>
+    <div class="glass-card p-6 sm:p-8">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-center text-cyan-300 professional-font-bold">Certifications & Training</h3>
+      <ul class="text-gray-300 space-y-4 text-sm sm:text-base">
+        <li><strong>Wharton - University of Pennsylvania:</strong> AI Strategy & Governance Certification (2024), Leading a Tech-Driven Org Certification (2023).</li>
+        <li><strong>MIT - Massachusetts Institute of Technology:</strong> Digital Transformation - Certified in Blockchain, AI, ML, Cloud, IoT, and RPA (2019).</li>
+        <li><strong>Vanderbilt University:</strong> Agentic AI and AI Agents for Leaders - Specialization (2025).</li>
+        <li><strong>Wharton - University of Pennsylvania:</strong> AI for Business - Specialization [In-Progress] (2025).</li>
+      </ul>
+      <p class="text-gray-400 text-sm italic mt-4">For my full list of accomplishments, please refer to my LinkedIn profile.</p>
     </div>
   </div>
 </section>
@@ -99,7 +105,7 @@ iframe.form-embed{width:100%;min-height:600px;border:none;border-radius:15px;}
       </div>
       <div class="glass-card p-6">
         <h3 class="text-xl sm:text-2xl font-bold mb-4 text-cyan-300 professional-font-bold">Strategic Co-Creation</h3>
-        <p class="text-gray-300 text-sm sm:text-base">Lead AI workshops to operationalize agentic AI with embedded trust, governance, and scalability.</p>
+        <p class="text-gray-300 text-sm sm:text-base">Lead AI workshops to operationalize agentic AI with embedded trust, governance, and scalability. Champion cross-functional collaboration rituals to co-create scalable AI solutions.</p>
       </div>
     </div>
   </div>
@@ -109,10 +115,16 @@ iframe.form-embed{width:100%;min-height:600px;border:none;border-radius:15px;}
 <section id="whats-next" class="section">
   <div class="max-w-4xl mx-auto">
     <h2 class="professional-font-bold text-4xl sm:text-5xl md:text-6xl text-center mb-6 text-white">What's Next</h2>
-    <p class="text-center max-w-3xl mx-auto mb-8 text-gray-300 text-sm sm:text-base">Stay updated with my upcoming projects and book releases.</p>
-    <div class="glass-card p-6 sm:p-8">
-      <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-cyan-300 professional-font-bold text-center">Subscribe for Updates</h3>
-      <iframe class="form-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSehAmJhnOriL_6EDTliW5TP3-MP1PbkoLCB2dxes5d-nuQiDQ/viewform?embedded=true"></iframe>
+    <p class="text-center max-w-3xl mx-auto mb-8 text-gray-300 text-sm sm:text-base">I'm currently working on several projects that will shape the future of digital transformation and AI leadership.</p>
+    <div class="space-y-8 max-w-3xl mx-auto">
+      <div class="glass-card p-6 sm:p-8">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-2 text-cyan-300 professional-font-bold">Upcoming Book</h3>
+        <p class="text-gray-300 text-sm sm:text-base">I'm excited to announce my upcoming book, <em>[Placeholder Title: "Surprise"]</em>. It will serve as a professional manifesto, diving deep into the themes of ethical AI, strategic innovation, and the future of work.</p>
+      </div>
+      <div class="glass-card p-6 sm:p-8">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-2 text-cyan-300 professional-font-bold">Future Initiatives</h3>
+        <p class="text-gray-300 text-sm sm:text-base">Stay tuned for new service offerings and my upcoming speaking engagements at industry events.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -125,113 +137,9 @@ iframe.form-embed{width:100%;min-height:600px;border:none;border-radius:15px;}
     <div class="mb-12 space-y-4 text-lg">
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/akhan01" target="_blank" class="text-cyan-400 hover:text-white transition-colors duration-300">www.linkedin.com/in/akhan01</a></p>
     </div>
-    <div class="glass-card p-6 sm:p-8">
-      <h3 class="text-2xl sm:text-3xl font-bold mb-4 text-cyan-300 professional-font-bold text-center">Contact Form</h3>
-      <iframe class="form-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSehAmJhnOriL_6EDTliW5TP3-MP1PbkoLCB2dxes5d-nuQiDQ/viewform?embedded=true"></iframe>
-    </div>
   </div>
 </section>
 
-<script>
-// --- Mobile menu toggle ---
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
-mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
-
-// --- Smooth scrolling ---
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-  anchor.addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-    if(!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
-  });
-});
-// --- Background particles animation ---
-const bgCanvas = document.getElementById('bg-canvas');
-const bgCtx = bgCanvas.getContext('2d');
-let particles = [];
-
-function resizeCanvas() {
-  bgCanvas.width = window.innerWidth;
-  bgCanvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-class Particle {
-  constructor(x, y, r, color, v) {
-    this.x = x;
-    this.y = y;
-    this.r = r;
-    this.color = color;
-    this.v = v;
-  }
-  draw() {
-    bgCtx.beginPath();
-    bgCtx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-    bgCtx.fillStyle = this.color;
-    bgCtx.fill();
-  }
-  update() {
-    this.x += this.v.x;
-    this.y += this.v.y;
-    if (this.x < 0 || this.x > bgCanvas.width) this.x = Math.random() * bgCanvas.width;
-    if (this.y < 0 || this.y > bgCanvas.height) this.y = Math.random() * bgCanvas.height;
-    this.draw();
-  }
-}
-
-for (let i = 0; i < 120; i++) {
-  particles.push(new Particle(
-    Math.random() * bgCanvas.width,
-    Math.random() * bgCanvas.height,
-    Math.random() * 1.5,
-    `rgba(127,255,255,${Math.random()})`,
-    { x: (Math.random() - 0.5) * 0.2, y: (Math.random() - 0.5) * 0.2 }
-  ));
-}
-
-function animateParticles() {
-  bgCtx.clearRect(0, 0, bgCanvas.width, bgCanvas.height);
-  particles.forEach(p => p.update());
-  requestAnimationFrame(animateParticles);
-}
-animateParticles();
-
-// --- 3D Agentic AI Core animation ---
-const container = document.getElementById('agentic-core-container');
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-renderer.setSize(container.clientWidth, container.clientHeight);
-container.appendChild(renderer.domElement);
-
-window.addEventListener('resize', () => {
-  camera.aspect = container.clientWidth / container.clientHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(container.clientWidth, container.clientHeight);
-});
-
-// Digital, futuristic object (octahedron with glow)
-const geometry = new THREE.OctahedronGeometry(2, 0);
-const material = new THREE.MeshStandardMaterial({ color: 0x00ffff, emissive: 0x00ffff, emissiveIntensity: 0.5, metalness: 0.7, roughness: 0.1 });
-const core = new THREE.Mesh(geometry, material);
-scene.add(core);
-
-const light1 = new THREE.PointLight(0x00ffff, 1);
-light1.position.set(10, 10, 10);
-scene.add(light1);
-
-const light2 = new THREE.PointLight(0xff00ff, 1);
-light2.position.set(-10, -10, 10);
-scene.add(light2);
-
-camera.position.z = 7;
-
-function animateCore() {
-  requestAnimationFrame(animateCore);
-  core.rotation.x += 0.01;
-  core.rotation.y += 0.015;
-  renderer.render(scene, camera);
-}
-animateCore();
+<script src="script.js"></script>
+</body>
+</html>
